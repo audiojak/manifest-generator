@@ -12,22 +12,26 @@ markdown-based skill instructions.
 
 ## Install
 
-**Project-local (this project only):**
-
-```bash
-mkdir -p .claude/skills/manifest-generator
-cp manifest-generator/SKILL.md .claude/skills/manifest-generator/SKILL.md
-```
-
 **Global (all projects):**
 
 ```bash
-mkdir -p ~/.claude/skills/manifest-generator
-cp manifest-generator/SKILL.md ~/.claude/skills/manifest-generator/SKILL.md
+git clone --depth 1 https://github.com/audiojak/manifest-generator.git ~/.claude/skills/manifest-generator
+```
+
+**Project-local (this project only):**
+
+```bash
+git clone --depth 1 https://github.com/audiojak/manifest-generator.git .claude/skills/manifest-generator
 ```
 
 Then invoke with `/manifest-generator` in Claude Code, or the equivalent slash
 command in your agent runtime.
+
+**Update:**
+
+```bash
+git -C ~/.claude/skills/manifest-generator pull
+```
 
 ---
 
