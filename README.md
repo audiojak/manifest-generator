@@ -172,6 +172,3 @@ multi-agent pipeline that reads Markdown configuration.
 The skill is a single file: `manifest-generator/SKILL.md`.
 
 To modify: edit the file, run the 5 smoke tests above, submit a PR.
-
-To submit to [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills):
-follow their contribution guidelines — the skill is agent-agnostic and compatible.
