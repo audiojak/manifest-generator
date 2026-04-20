@@ -12,15 +12,26 @@ markdown-based skill instructions.
 
 ## Install
 
-**Global (all projects):**
+**Recommended — works with 45+ agent runtimes (Claude Code, Cursor, Codex, Gemini CLI, and more):**
 
 ```bash
-git clone --depth 1 https://github.com/audiojak/manifest-generator.git ~/.claude/skills/manifest-generator
+npx skills add https://github.com/audiojak/manifest-generator
 ```
 
-**Project-local (this project only):**
+The `skills` CLI will prompt you to choose which agent runtimes to install into.
+Add `--yes` to skip prompts and install to all universal targets:
 
 ```bash
+npx skills add https://github.com/audiojak/manifest-generator --yes
+```
+
+**Manual install — git clone:**
+
+```bash
+# Global (all projects)
+git clone --depth 1 https://github.com/audiojak/manifest-generator.git ~/.claude/skills/manifest-generator
+
+# Project-local (this project only)
 git clone --depth 1 https://github.com/audiojak/manifest-generator.git .claude/skills/manifest-generator
 ```
 
